@@ -1,7 +1,36 @@
-export default function App() {
+import React from 'react'
+import Navbar from './components/Navbar'
+import Home from './components/Home'
+import Plans from './components/Plans'
+import About from './components/About'
+import Trainers from './components/Trainers'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+
+const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div>
+      <Navbar/>
+      <main>
+        <div id='home'>
+          <Home/>
+        </div>
+        <div id='plan'>
+          <Plans/>
+        </div>
+        <div id='about'>
+          <About/>
+        </div>
+        <div id='trainer'>
+          <Trainers/>
+        </div>
+        <div id='contact'>
+          <Contact/>
+        </div>
+      </main>
+      <Footer/>
+    </div>
   )
 }
+
+export default App
