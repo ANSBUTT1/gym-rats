@@ -3,7 +3,7 @@ import React from 'react';
 const HomeHero = () => {
   return (
     <div
-      className="relative w-full h-[600px] bg-cover lg:bg-cover bg-center bg-no-repeat"
+      className="relative bg-fixed w-full h-screen   lg:bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url(https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?auto=compress&cs=tinysrgb&w=600)" }} // Set your background image URL here
     >
       <div className="absolute inset-0 bg-black opacity-50"></div> {/* Overlay to darken the background image */}
